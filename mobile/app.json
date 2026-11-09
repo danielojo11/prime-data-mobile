@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "PrimeData",
+    "slug": "primedata",
+    "version": "1.0.0",
+    "description": "Buy data, airtime, pay bills, and print recharge cards with PrimeData VTU.",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "primedata",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#050505",
+    "primaryColor": "#10B981",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.primedata.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.primedata.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#050505",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "PrimeData",
+      "shortName": "PrimeData",
+      "favicon": "./assets/favicon.png",
+      "themeColor": "#10B981",
+      "backgroundColor": "#050505"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#050505",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#050505",
+            "image": "./assets/splash-icon.png"
+          }
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow PrimeData to use Face ID to sign you in and confirm payments securely."
+        }
+      ],
+      "expo-sharing"
+    ]
+  }
+}

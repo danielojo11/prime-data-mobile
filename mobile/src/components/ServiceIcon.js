@@ -1,0 +1,62 @@
+import React from 'react';
+import {
+  ArrowDownCircle,
+  Briefcase,
+  Clock,
+  Coins,
+  CreditCard,
+  Database,
+  Gift,
+  Globe,
+  GraduationCap,
+  HelpCircle,
+  Layers,
+  LifeBuoy,
+  MessageCircle,
+  Phone,
+  PlusCircle,
+  Printer,
+  RefreshCw,
+  Repeat,
+  Send,
+  Tv,
+  UserPlus,
+  Users,
+  Wallet,
+  Wifi,
+  Zap,
+  AlertTriangle,
+} from 'lucide-react-native';
+
+const ICONS = {
+  Wifi,
+  Database,
+  CreditCard,
+  Briefcase,
+  Phone,
+  Repeat,
+  Send,
+  Printer,
+  Zap,
+  Tv,
+  Globe,
+  GraduationCap,
+  Wallet,
+  PlusCircle,
+  Users,
+  ArrowDownCircle,
+  Clock,
+  Gift,
+  RefreshCw,
+  UserPlus,
+  Coins,
+  LifeBuoy,
+  MessageCircle,
+  HelpCircle,
+  AlertTriangle,
+};
+
+export default function ServiceIcon({ name, size = 18, color, ...rest }) {
+  const Icon = ICONS[name] || Layers;
+  return <Icon size={size} color={color} {...rest} />;
+}
